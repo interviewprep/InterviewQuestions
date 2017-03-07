@@ -1,15 +1,16 @@
-
+// Linked List Node class
 public class RevLinkedList {
-	// Java program for reversing the linked list
+	
 	 
 	 
-	    static Node head;
+	    static Node head; // Linked list head reference
 	 
 	    static class Node {
 	 
-	        int data;
-	        Node next;
+	        int data; // Node data
+	        Node next;// Next and random reference
 	 
+		// Node constructor
 	        Node(int d) {
 	            data = d;
 	            next = null;
