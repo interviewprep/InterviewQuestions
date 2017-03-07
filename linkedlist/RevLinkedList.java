@@ -24,15 +24,13 @@ public class RevLinkedList {
 	        Node current = node;
 	        Node next = null;
 	        while (current != null) {
-	        	/**swap the Current Node Reference with Next Node Reference 
-	        	 * 1->2 becomes 2-> 1
-	        	 */
-	            next = current.next;
-	            current.next = prev;
-	            prev = current;
-	            current = next;
+	        	//swap the Current Node Reference with Next Node Reference 1->2 becomes 2-> 1
+	            next = current.next;//store Next reference of current Node
+	            current.next = prev; //reassign the Current node's Next reference with Previous Node
+	            prev = current; // update prev reference with current node 
+	            current = next; // update current node reference with Next node reference as mentioned in step 28
 	        }
-	        node = prev;
+	        node = prev;//return the last node  which is the first node after reversing the list
 	        return node;
 	    }
 	 
