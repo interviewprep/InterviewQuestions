@@ -1,0 +1,78 @@
+<h1>Time Complexity</h1>
+<h2>Why is time complexity important?</h2>
+<p>Many internet companies deal with large quantities of data. The difference between a O(n^2) algorithm and O(n) algorithm can be significant when dealing with massive data.&nbsp;</p>
+<p>Of course, in programming interviews, coming up with a solution with a lower time complexity is also seen as demonstration of problem solving skills.&nbsp;</p>
+<h2>The intuition behind time complexity:</h2>
+<p>Time complexity is not about how much time a program takes to execute, rather how the execution time scales with input.</p>
+<p><iframe src="//www.youtube.com/embed/45xrI4nZe4Y" width="425" height="350"></iframe></p>
+<h2><strong>Guess the time complexity?</strong></h2>
+<p>What of the following time complexities best applies to the following functions?</p>
+<p>O(n), O(log n), O(n log n), O(n^2), O(n!), O(n log log n)</p>
+<h2><strong>Easy questions:</strong></h2>
+<p>1.</p>
+<p><em>int fun(int n) {</em></p>
+<p><em>int count = 0;</em></p>
+<p><em>for (int i=0;i&lt;n; i++) {</em></p>
+<p><em> for (int j=0;j&lt;n; j++) {</em></p>
+<p><em> count = count + 1</em></p>
+<p><em>}</em></p>
+<p><em>}</em></p>
+<p><em>for (int i =0; i&lt;n; i++) {</em></p>
+<p><em> count = count + 1;</em></p>
+<p><em>}</em></p>
+<p><em>return count;</em></p>
+<p><em>} </em></p>
+<p>&nbsp;</p>
+<p>2.</p>
+<p><em>int fun(int n)</em></p>
+<p><em>{</em></p>
+<p><em> int count = 0;</em></p>
+<p><em> for (int i = n; i &gt; 0; i=i/2) {</em></p>
+<p><em> count = count + 1;</em></p>
+<p><em> }</em></p>
+<p><em> return count;</em></p>
+<p><em>} </em></p>
+<p>&nbsp;</p>
+<h2><strong>Challenging questions: </strong></h2>
+<p>3.</p>
+<p><em>int fun(int n)</em></p>
+<p><em>{</em></p>
+<p><em> int count = 0;</em></p>
+<p><em> for (int i = n; i &gt; 0; i /= 2) {</em></p>
+<p><em> for (int j = 0; j &lt; i; j++) {</em></p>
+<p><em> count += 1;</em></p>
+<p><em> }</em></p>
+<p><em>}</em></p>
+<p><em> return count;</em></p>
+<p><em>}</em></p>
+<p><em><strong>4.</strong></em></p>
+<p><em>void fun(int n, int arr[])</em></p>
+<p><em>{</em></p>
+<p><em> int i = 0, j = 0;</em></p>
+<p><em> for(; i &lt; n; ++i) {</em></p>
+<p><em> while(j &lt; n &amp;&amp; arr[i] &lt; arr[j]) {</em></p>
+<p><em> j++;</em></p>
+<p><em> }</em></p>
+<p><em> }</em></p>
+<p><em>}</em></p>
+<p>&nbsp;</p>
+<p><em>5.</em></p>
+<p><em>int fun(int n)</em></p>
+<p><em>{</em></p>
+<p><em> int count = 0;</em></p>
+<p><em> for (int i = 0; i &lt; n; i++) {</em></p>
+<p><em> for (int j = i; j &gt; 0; j--) { </em></p>
+<p><em> count = count + 1;</em></p>
+<p><em> }</em></p>
+<p><em> }</em></p>
+<p><em> return count;</em></p>
+<p><em><strong><br />} </strong></em></p>
+<p>&nbsp;</p>
+<h2><strong>Answers</strong></h2>
+<ol>
+<li>O(n^2)</li>
+<li>O(log n)</li>
+<li>O(n)</li>
+<li>O(n)</li>
+<li>O(n^2)</li>
+</ol>
