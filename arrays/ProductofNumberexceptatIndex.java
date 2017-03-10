@@ -1,3 +1,8 @@
+/*
+ * Given an array of integers, return an array where the element at i is the product of all the numbers except the number 
+ * at location i in the original array
+ */ 
+
 package arrays;
 
 public class ProductofNumberexceptatIndex {
