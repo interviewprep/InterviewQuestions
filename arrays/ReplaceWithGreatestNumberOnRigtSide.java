@@ -1,3 +1,7 @@
+/*
+ * Replace an array of numbers by the greatest number on the right hand side
+ */
+
 package arrays;
 
 public class ReplaceWithGreatestNumberOnRigtSide {
