@@ -1,3 +1,9 @@
+/*
+ * Given an array of positives, 0’s and negatives, change the array to make sure all the negatives come first, 
+ * then the 0’s and then positive’s. This is also known as the Dutch flag problem. 
+ * Here we do it in a single pass of the array.
+ */
+
 package arrays;
 
 public class DucthNationalFlag {
