@@ -1,3 +1,8 @@
+/*
+ * Given an array of Integers, find the minimum distance between the given pair of numbers.
+ */
+
+
 package arrays;
 
 public class MinimumDistanceBetweenPair {
