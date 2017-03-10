@@ -1,3 +1,7 @@
+/*
+ * Given a sorted array of Integers, can you find if there are two numbers that add up to a given target?
+ */
+
 package arrays;
 import java.util.Arrays;
 
@@ -17,7 +21,6 @@ public class TwoSum {
 	
 	public static boolean threesum(int []A, int target){
 		if(A==null) return false;
-		Arrays.sort(A);
 		for(int i=0;i<A.length-3;i++){
 			int j=i+1,k=A.length-1,sum= target-A[i];
 			while(j<k)
@@ -32,7 +35,6 @@ public class TwoSum {
 
 	public static boolean threesum2(int []A,int target){
 		if(A==null) return false;
-		Arrays.sort(A);
 		for (int i = 0; i < A.length; i++) {
 			if(find(A,target-2*A[i])) return true;
 		}
@@ -77,7 +79,7 @@ public class TwoSum {
 
 	
 	public static void main(String []args){
-		int []a = {5,6,7,2,3};
+		int []a = {5,6,7,12,13};
 		int []b={1,7,8};
 		System.out.println(threesum(a,20));
 		System.out.println(threesum2(a,20));
