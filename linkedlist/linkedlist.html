@@ -1,0 +1,87 @@
+Linked Lists
+
+ 
+
+Linked lists are discrete chunks of memory called nodes tied together as a list. Unlike arrays, we access a node by passing every node from the head step by step because we cannot directly access a particular node.
+
+This unique challenge in accessing nodes forms the basis of various interview questions on linked lists. Familiarity with a handful of popular interview questions is probably the best way to prepare for linked lists.
+
+ 
+
+ 
+
+Operation
+
+Time Complexity
+
+Read/Modify a particular node
+
+O(n) unless we have the pointer directly to the node
+
+Insert
+
+O(1) to insert. Unless inserted at head, there is an additional O(n) time complexity to traverse the list.
+
+Delete
+
+O(1) to delete. Unless deleted at head, there is an additional O(n) time complexity to traverse the list.
+
+ 
+
+
+
+ 
+
+ 
+
+Basic questions
+
+ 
+
+Merge two linked lists https://github.com/interviewprep/InterviewQuestions/blob/master/linkedlist/MergeLinkedList.java
+
+ 
+
+Detect if two linked lists intersect https://github.com/interviewprep/InterviewQuestions/blob/master/linkedlist/IntersectionLinkedList.java
+
+ 
+
+Reverse a linked list
+
+The basic idea behind this question is to replace a pointer from current to next with a pointer from next to current. Of course, you must be careful not to miss the rest of the linked list after next
+
+https://github.com/interviewprep/InterviewQuestions/blob/master/linkedlist/RevLinkedList.java
+
+ 
+
+Detect a cycle in a linked list
+
+The idea behind detecting cycles in linked lists is that if you traverse a linked list with a loop you will never hit the null pointer. To visualize this question, imagine two people, one running and one walking on a track. What would happen if the track was circular?
+
+https://github.com/interviewprep/InterviewQuestions/blob/master/linkedlist/RevLinkedList.java
+
+ 
+
+ 
+
+Convert a linked list 1,2,3,...n-1,n as 1,n,2,n-1,3,n-2………
+
+The second half of the linked list is interspesed in reverse order with the first half. 
+
+https://github.com/interviewprep/InterviewQuestions/blob/master/linkedlist/ReArrangeLinkedList.java
+
+ 
+
+Advanced questions
+
+ 
+
+A linked list is made up of a special type of node. Each special node has a next pointer like any other linked list, but also has a special pointer that points to another  (random) node in that linked list.  How will you clone this linked list?
+
+
+
+https://github.com/interviewprep/InterviewQuestions/blob/master/linkedlist/CloneLinkedList.java
+
+ 
+
+ 
