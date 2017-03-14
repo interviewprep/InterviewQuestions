@@ -1,36 +1,36 @@
 public class SearchRotatedArray {
 
-	static int rotated_binary_search(int A[], int N, int key) {
-		int L = 0;
-		int R = N - 1;
+	static int rotatedBinarySearch(int A[], int N, int key) {
+		int leftIndex = 0;
+		int rightIndex = N - 1;
 		// loop through till left index value is less than Right
-		while (L <= R) {
+		while (leftIndex <= rightIndex) {
 			// Avoid overflow, same as M=(L+R)/2 . Same as Binary Search to find
 			// Midpoint of the array.
-			int M = L + ((R - L) / 2);
-			if (A[M] == key)
-				return M;// if key found then return index position
+			int midPoint = leftIndex + ((rightIndex - leftIndex) / 2);
+			if (A[midPoint] == key)
+				return midPoint;// if key found then return index position
 
 			// check..the bottom half is sorted
-			if (A[L] <= A[M]) {
-				if (A[L] <= key && key < A[M])// check value of key greater than
+			if (A[leftIndex] <= A[midPoint]) {
+				if (A[leftIndex] <= key && key < A[midPoint])// check value of key greater than
 												// lower index and less than mid
 												// point
-					R = M - 1;// Set the upper limit by decrementing Mid Index
+					rightIndex = midPoint - 1;// Set the upper limit by decrementing Mid Index
 								// position
 				else
-					L = M + 1;// set lower index value by incrementing the Mid
+					leftIndex = midPoint + 1;// set lower index value by incrementing the Mid
 								// index position
 			}
 			// upper half is sorted
 			else {
-				if (A[M] < key && key <= A[R])// key is greater than Mid point
+				if (A[midPoint] < key && key <= A[rightIndex])// key is greater than Mid point
 												// and less than Right most
 												// index
-					L = M + 1;// set lower index value by incrementing the
+					leftIndex = midPoint + 1;// set lower index value by incrementing the
 								// Midpoint
 				else
-					R = M - 1;// set upper limit by decrementing the midpoint
+					rightIndex = midPoint - 1;// set upper limit by decrementing the midpoint
 			}
 		}
 		return -1;
@@ -38,7 +38,7 @@ public class SearchRotatedArray {
 
 	public static void main(String[] args) {
 		int[] a = new int[] { 0, 1, 2, 3, 4 };
-		rotated_binary_search(a, a.length, 4);
+		rotatedBinarySearch(a, a.length, 4);
 
 	}
 }
