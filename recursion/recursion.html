@@ -1,0 +1,39 @@
+<h1 style="text-align: center; padding-left: 30px;">Recursion</h1>
+<p style="padding-left: 30px;">&nbsp;</p>
+<p style="padding-left: 30px;">Recursion basically solves a larger problem by solving similar but smaller subproblems.&nbsp;</p>
+<p style="padding-left: 30px;">&nbsp;</p>
+<p style="padding-left: 30px;">In programming interviews, we use recursion when we know that we can solve the question at hand if somehow smaller subproblems are solved. For example, if you have to find the depth of a tree, we know that we can trivially calculate depth of a tree if we know the depth of the left subtree and right subtree.&nbsp;</p>
+<p style="padding-left: 30px;">Most problems involving trees can be solved if their subproblems are solved, so they involve recursion.</p>
+<p style="padding-left: 30px;">Other reasons to use recursion is when a problem involves backtracking (you have to go down a path, back up and go down another path).&nbsp;</p>
+<p style="padding-left: 30px;">&nbsp;</p>
+<h2 style="padding-left: 30px;">Estimating time complexity of recursion</h2>
+<p style="padding-left: 30px;">Don't forget to draw the recursion tree. Time complexity is the number of nodes in the tree, and space complexity is the maximum depth of the tree.</p>
+<p style="padding-left: 30px;">&nbsp;</p>
+<p style="padding-left: 30px;">What is the time &nbsp;&amp; space &nbsp;complexity of the following code ?</p>
+<p style="padding-left: 30px;"><em><span style="font-weight: 400;">int fun (int n) {</span></em></p>
+<p style="padding-left: 30px;"><em><span style="font-weight: 400;">if (n == 0) return 0;</span></em></p>
+<p style="padding-left: 30px;"><em><span style="font-weight: 400;">return fun(n-1);</span></em></p>
+<p style="padding-left: 30px;"><em><span style="font-weight: 400;">}</span></em></p>
+<p style="padding-left: 30px;">&nbsp;</p>
+<p style="padding-left: 30px;">What is the time &nbsp;&amp; space &nbsp;complexity of the following code ?</p>
+<p style="padding-left: 30px;"><em><span style="font-weight: 400;">void fun (int n) {</span></em></p>
+<p style="padding-left: 30px;"><em><span style="font-weight: 400;">if (n == 0) return ;</span></em></p>
+<p style="padding-left: 30px;"><em><span style="font-weight: 400;">for (i = 0; i&lt; n ; i++ ) {</span></em></p>
+<p style="padding-left: 30px;"><em><span style="font-weight: 400;">fun(n-1);</span></em></p>
+<p style="padding-left: 30px;"><em><span style="font-weight: 400;">}</span></em></p>
+<p style="padding-left: 30px;"><em><strong> <span style="font-weight: 400;">}</span></strong></em></p>
+<p style="padding-left: 30px;">&nbsp;</p>
+<h2 style="padding-left: 30px;">Basic Problems&nbsp;</h2>
+<p style="padding-left: 30px;">&nbsp;</p>
+<p style="padding-left: 30px;">A recursive function to calculate the ith fibanocci number.&nbsp;</p>
+<p style="padding-left: 30px;">&nbsp;</p>
+<p style="padding-left: 30px;">A recursive function to calculate depth of a tree</p>
+<p style="padding-left: 30px;">&nbsp;</p>
+<h2 style="padding-left: 30px;">Advanced Questions</h2>
+<p style="padding-left: 30px;">&nbsp;</p>
+<p style="padding-left: 30px;">A phone number like 1-800-2886-869 is often written as 1-800-auto-tow. Given a string of numbers print all possible words for that number. For example, if the input is "23", your output will be AD, AE, AF, BD, BE, and so on. Order doens't matter.&nbsp;</p>
+<p style="padding-left: 30px;">&nbsp;</p>
+<p style="padding-left: 30px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="https://www.researchgate.net/publication/221095207/figure/fig1/AS:305675231088641@1449890062942/Fig-1-Regular-Mobile-Phone-Keypad.png" alt="" width="158" height="226" /></p>
+<p style="padding-left: 30px;">&nbsp;</p>
+<p style="padding-left: 30px;">&nbsp;</p>
+<p style="padding-left: 30px;">&nbsp;</p>
