@@ -1,3 +1,5 @@
+package arrays;
+
 public class SearchInRotatedSorted {
 
 	public static void main(String[] args) {

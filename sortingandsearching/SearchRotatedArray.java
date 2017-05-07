@@ -1,3 +1,4 @@
+package sortingandsearching;
 public class SearchRotatedArray {
 
 	static int rotatedBinarySearch(int A[], int N, int key) {

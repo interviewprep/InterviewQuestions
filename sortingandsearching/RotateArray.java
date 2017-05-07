@@ -1,4 +1,4 @@
-package searchingsorting;
+package sortingandsearching;
 
 public class RotateArray {
 	
