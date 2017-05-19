@@ -6,27 +6,34 @@
 
 package arrays;
 
+/* Two pass / simpel  method: 
+ * 1. Take negatives to one end, positives and zeros to the other end.
+ * 2. Repeat for positives and zeros
+ */
+
+/* One pass / Dutch flag method (implemented below)
+ * 1. Take three pointers, first, second, and third. 
+ * 2. Move second from beginning to end, swapping negative numbers with first and positive numbers with third.
+ */
 public class DucthNationalFlag {
-	public static void reArrange(int []A){
-		int first=0,second=0,third=A.length-1;
-		while(second<=third){
-			if(A[second]<0){
-				Utilities.swap(A,first++,second++);
-			}
-			else if(A[second]>0){
-				Utilities.swap(A,second,third--);
-			}
-			else {
+	public static void reArrange(int[] A) {
+		int first = 0, second = 0, third = A.length - 1;
+		while (second <= third) {
+			if (A[second] < 0) {
+				Utilities.swap(A, first++, second++);
+			} else if (A[second] > 0) {
+				Utilities.swap(A, second, third--);
+			} else {
 				second++;
 			}
 		}
 	}
-	
-	public static void main(String []args){
-		int []A={0,1,5,-6,-2,7,8,-11,0};
+
+	public static void main(String[] args) {
+		int[] A = { 0, 1, 5, -6, -2, 7, 8, -11, 0 };
 		reArrange(A);
 		Utilities.printArray(A);
-		
+
 	}
 
 }

@@ -1,20 +1,31 @@
 package string;
 
+/*
+ * Rotate an array of strings by k times.
+ */
+
 public class RotateString {
-	static public String rotateString(String input, int times) {
-		StringBuilder sb = new StringBuilder();
-		int len = input.length();
-
-		for (int i = 0; i < len; i++) {
-			if (i < times)
-				sb.append(input.charAt(i));
-			else
-				sb.insert(i - times, input.charAt(i));
-		}
-
-		return sb.toString();
+	static public char[] rotateString(char[] input, int times) {
+		
+		 times = times%input.length;
+		 
+		 reverseArray(input, 0, input.length - 1);
+		 reverseArray(input, 0, times - 1);
+		 reverseArray(input, times, input.length - 1);
+		 return input;
 	}
+	
 	public static void main(String []args){
-		System.out.println(rotateString("abcde", 3));
+		char[] charArray = {'a', 'b', 'c', 'd', 'e'};
+		System.out.println(rotateString(charArray, 6));
+	}
+	
+	private static void reverseArray(char array[], int start, int end) {
+		while(start <= end) {
+			char temp = array[end];
+			array[end] = array[start];
+			array[start] = temp;
+			start++; end--;
+		}
 	}
 }
