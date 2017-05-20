@@ -1,3 +1,5 @@
+package linkedlist;
+
 public class MergeLinkedList {
 	public  Node head;
 

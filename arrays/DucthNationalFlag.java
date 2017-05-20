@@ -16,7 +16,7 @@ package arrays;
  * 2. Move second from beginning to end, swapping negative numbers with first and positive numbers with third.
  */
 public class DucthNationalFlag {
-	public static void reArrange(int[] A) {
+	public static void reArrange(Integer[] A) {
 		int first = 0, second = 0, third = A.length - 1;
 		while (second <= third) {
 			if (A[second] < 0) {
@@ -30,7 +30,7 @@ public class DucthNationalFlag {
 	}
 
 	public static void main(String[] args) {
-		int[] A = { 0, 1, 5, -6, -2, 7, 8, -11, 0 };
+		Integer[] A = { 0, 1, 5, -6, -2, 7, 8, -11, 0 };
 		reArrange(A);
 		Utilities.printArray(A);
 

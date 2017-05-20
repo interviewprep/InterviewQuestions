@@ -1,4 +1,4 @@
-package string;
+package strings;
 
 /*
  * Rotate an array of strings by k times.

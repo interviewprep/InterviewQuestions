@@ -1,3 +1,5 @@
+package linkedlist;
+
 import java.util.HashMap;
 
 public class IntersectionLinkedList {

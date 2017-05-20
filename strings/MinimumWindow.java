@@ -3,7 +3,7 @@
  * 
  */
 
-package string;
+package strings;
 
 import java.util.HashMap;
 

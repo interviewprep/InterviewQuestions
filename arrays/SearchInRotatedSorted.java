@@ -1,4 +1,10 @@
+/*
+ * A sorted array is rotated. {1 , 2, 3, 4} may be {4, 1, 2, 3}.
+ * Find the given number in this array
+ */
 package arrays;
+
+// We use binary search to search an element in a space that we can partition. 
 
 public class SearchInRotatedSorted {
 
@@ -28,6 +34,6 @@ public class SearchInRotatedSorted {
 				}
 			}
 		}
-		return 0;
+		return -1;
 	}
 }

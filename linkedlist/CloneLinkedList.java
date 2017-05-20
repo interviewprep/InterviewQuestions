@@ -1,5 +1,8 @@
+package linkedlist;
+
 import java.util.HashMap;
 import java.util.Map;
+
 
 // Linked List Node class
 class Node {
