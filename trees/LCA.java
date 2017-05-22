@@ -6,11 +6,8 @@
 
 package trees;
 
-import trees.BinaryTreePrototypeTemplate.BinaryTreeNode;
-
 public class LCA {
-	public BinaryTreeNode<Integer> lowestCommonAncestor(BinaryTreeNode<Integer> root, BinaryTreeNode<Integer> p,
-			BinaryTreeNode<Integer> q) {
+	public static TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
 
 		// watch for corner case where one node may be the parent of other node
 
@@ -18,8 +15,8 @@ public class LCA {
 			return root;
 
 		// Check left subtree and right subtree for the common ancestor
-		BinaryTreeNode<Integer> left = lowestCommonAncestor(root.left, p, q);
-		BinaryTreeNode<Integer> right = lowestCommonAncestor(root.right, p, q);
+		TreeNode left = lowestCommonAncestor(root.left, p, q);
+		TreeNode right = lowestCommonAncestor(root.right, p, q);
 
 		// if one of the nodes is in the left subtree and one in the right
 		// subtree, the
@@ -31,4 +28,18 @@ public class LCA {
 		// has been recursively returned to us.
 		return left != null ? left : right;
 	}
+
+	public static void main(String args[]) {
+		TreeNode a = new TreeNode(10);
+		TreeNode b = new TreeNode(20, null, a);
+		TreeNode d = new TreeNode(40);
+		TreeNode root = new TreeNode(15, b, d);
+		/*
+		 *         15
+		 *     20       40
+		 *  null  10
+		 */
+		System.out.println(lowestCommonAncestor(root, a, d));
+	}
+
 }

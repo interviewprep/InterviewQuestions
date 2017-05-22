@@ -42,5 +42,10 @@ public class Water {
 		}
 		return max;
 	}
+	
+	public static void main(String args[]) {
+		int histogram[] = {5, 4,3, 5};
+		System.out.println(max(histogram)); //0 + 1 + 2 + 0 = 3
+	}
 
 }

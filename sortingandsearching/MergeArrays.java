@@ -13,7 +13,7 @@ import java.util.Set;
 public class MergeArrays {
 	// Number of Arrays
 	private static final int N = 3;
-	// Stores Arrays into Map with id(rank) and Arrayobject as key value pairs
+	// Stores Arrays into Map with id(rank) and Array object as key value pairs
 	private static HashMap<Integer, ArrayList<Integer>> arrayMap = new HashMap<Integer, ArrayList<Integer>>();
 
 	private static int TOTAL = 0;
@@ -92,7 +92,7 @@ public class MergeArrays {
 		for (int i = 0; i < N; i++) {
 			int size = rand.nextInt(5) + 5;
 			TOTAL += size;
-			ArrayList<Integer> numList = new ArrayList();
+			ArrayList<Integer> numList = new ArrayList<>();
 			for (int j = 0; j < size; j++) {
 				int value = rand.nextInt(1000) + 1;
 				numList.add(value);
