@@ -19,4 +19,13 @@ public class Celebrity {
 		}
 		return i;
 	}
-}
+	
+	public static void main(String args[]){
+		boolean whoKnowsWho[][] = {{false, false, true},
+									{false, false, true},
+									{false, false, false}
+									};
+		System.out.println(find(whoKnowsWho));
+		
+		}
+	}

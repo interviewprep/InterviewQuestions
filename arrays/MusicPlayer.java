@@ -26,5 +26,10 @@ public class MusicPlayer {
 		A[i] = A[j];
 		A[j] = k;
 	}
+	
+	public static void main(String args[]) {
+		int array[] = {1, 3, 2, 5, 4};
+		random(array);
+	}
 
 }

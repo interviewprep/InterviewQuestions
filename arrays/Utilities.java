@@ -13,5 +13,12 @@ public class Utilities<T> {
 		}
 		System.out.println();
 	}
+	
+	public static  void printArray(int[] A) {
+		for ( int t : A) {
+			System.out.print(t + " ");
+		}
+		System.out.println();
+	}
 
 }

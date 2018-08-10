@@ -7,7 +7,7 @@ public class RevLinkedList {
 	    static Node head; // Linked list head reference
 	   
 	   // Linked List Node class
-	    static class Node {
+	     class Node {
 	 
 	        int data; // Node data
 	        Node next;// Next and random reference
