@@ -15,7 +15,7 @@
  void fetchFruit() {
      // we know we will get to the fruit at some point
      while (true) {
-       int heightToClimb = 1;
+       long heightToClimb = 1;
          for (int i =0; i<10; i++) {
              climbPole(i, heightToClimb);
              if (sawFruit()) {
