@@ -1,3 +1,17 @@
+/* 
+ * Given a stream of numbers in the range from 1 - K find the running median. 
+ * Accept is called for every number in the stream, and getMedian to compute the median of the stream.
+ * Constraints, we cannot store every number received in the stream. K is a relatively small number, say 1000.
+ */
+
+// An O(1) for accept, and O(K) for median is straightforward, just update the count of every number from 1 to K on accept
+// and compute the middle number in O(K).
+
+// The solution below has a time complexity of O(log K) for both accept and median. 
+
+// We maintain a heap like datastructure, where the root element has the count of all the elements, the left child has the 
+// count of all elements from 1 to K/2, and the right child from k/2 to 1. And so on.
+
 public class RunningMedianStream{
     public static final int K  = 5;
     public static int map[] = new int[2 * K]; 
