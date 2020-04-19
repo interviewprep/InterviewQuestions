@@ -1,4 +1,4 @@
-package arrays;
+package arrays.java;
 
 public class RotateArray {
 	

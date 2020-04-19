@@ -2,7 +2,7 @@
  * Replace an array of numbers by the greatest number on the right hand side
  */
 
-package arrays;
+package arrays.java;
 
 public class ReplaceWithGreatestNumberOnRigtSide {
 

@@ -1,3 +1,5 @@
+package graphs.java;
+
 import java.util.*;
 
 /*

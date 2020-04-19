@@ -2,7 +2,7 @@
  * Given an array of Integers, find the minimum distance between the given pair of numbers.
  */
 
-package arrays;
+package arrays.java;
 
 public class MinimumDistanceBetweenPair {
 

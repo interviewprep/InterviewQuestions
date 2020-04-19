@@ -1,4 +1,4 @@
-package arrays;
+package arrays.java;
 
 public class Utilities<T> {
 	public static <T> void swap(T[] A, int i, int j) {

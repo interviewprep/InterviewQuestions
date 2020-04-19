@@ -1,3 +1,5 @@
+package misc;
+
 /* 
  * Given a stream of numbers in the range from 1 - K find the running median. 
  * Accept is called for every number in the stream, and getMedian to compute the median of the stream.

@@ -4,7 +4,7 @@
  * Here we do it in a single pass of the array.
  */
 
-package arrays;
+package arrays.java;
 
 /* Two pass / simpel  method: 
  * 1. Take negatives to one end, positives and zeros to the other end.

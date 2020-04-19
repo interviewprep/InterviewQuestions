@@ -1,4 +1,4 @@
-package arrays;
+package arrays.java;
 /*
  * Count the number of sub arrays of a given array that has 3 as the maximum number (in that sub array)
  * Given the array [3,2,6,1,3], the following sub arrays have 3 as the max number

@@ -2,7 +2,7 @@
  * Given a sorted array of Integers, can you find if there are two numbers that add up to a given target?
  */
 
-package arrays;
+package arrays.java;
 
 public class TwoSum {
 	

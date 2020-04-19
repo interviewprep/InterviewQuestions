@@ -1,4 +1,4 @@
-package arrays;
+package arrays.java;
 
 /*
  * Given a 2d matrix of who knows who, find the celebrity in the party.

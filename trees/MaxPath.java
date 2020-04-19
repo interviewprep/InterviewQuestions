@@ -10,8 +10,8 @@ public class MaxPath{
      public static int maxPathSum(TreeNode root) {
         if (root == null)
         return 0;
-    	int leftMax = maxPathSumHelper(root.left);
-    	int rightMax = maxPathSumHelper(root.right);
+    	int leftMax = maxPathSum(root.left);
+    	int rightMax = maxPathSum(root.right);
 
         // the largest path at this node could be just this node, or any combination of this node 
         // and the largest path through its  left and right subtrees

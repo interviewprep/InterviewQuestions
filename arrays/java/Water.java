@@ -3,7 +3,7 @@
  * 
  */
 
-package arrays;
+package arrays.java;
 
 /* A simple approach is to calculate the tallest bar to the left and right of each bar. The maximum water column above each bar
  * is minimum(left_tallest, right_tallest) - height of current bar.

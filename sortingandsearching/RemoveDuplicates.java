@@ -1,6 +1,6 @@
 package sortingandsearching;
 
-import arrays.Utilities;
+import arrays.java.Utilities;
 
 public class RemoveDuplicates {
 	

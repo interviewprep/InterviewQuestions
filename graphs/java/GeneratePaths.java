@@ -1,3 +1,5 @@
+package graphs.java;
+
 // Generate all paths in a grid from source to destination if you can move only left or down, and can only traverse non zero cells. 
 
 

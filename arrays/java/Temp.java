@@ -1,4 +1,4 @@
-package arrays;
+package arrays.java;
 import java.util.*;
 
 public class Temp {

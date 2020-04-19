@@ -1,6 +1,6 @@
 package sortingandsearching;
 
-import arrays.Utilities;
+import arrays.java.Utilities;
 
 /* Find the given number in a sorted array that has been rotated 0 or more times
  * Sorted array rotated once: 50 10 20 30 40

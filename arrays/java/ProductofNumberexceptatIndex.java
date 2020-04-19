@@ -4,7 +4,7 @@
  * For example if input array is {2, 3, 4} output is {12, 8, 6}.
  */ 
 
-package arrays;
+package arrays.java;
 
 /* Multiplying all numbers and diving by the ith number may lead to overflow, even if there is a valid answer
  * Sometimes using the division operator may be prohibited as a part of the question

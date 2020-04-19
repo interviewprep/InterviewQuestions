@@ -1,7 +1,7 @@
 /*
  * Music Player: Given an array of Integers, pick a number at random without repetition till all the numbers have been picked.
  */
-package arrays;
+package arrays.java;
 
 import java.util.Random;
 

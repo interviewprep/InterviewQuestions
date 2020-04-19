@@ -2,7 +2,7 @@
  * Calculate the sum of the largest possible subarray of size 3. 
  */
 
-package arrays;
+package arrays.java;
 
 /*
  * Calculate the sum of the first 3 elements. Now move the window and recalculate the sum of the new window in costant time

@@ -3,7 +3,7 @@
  * For example, 50, 60,20, 30, 40, 2; the largest increasing sub array is 20,30,40.
  */
 
-package arrays;
+package arrays.java;
 
 public class LargestSubArray {
 
